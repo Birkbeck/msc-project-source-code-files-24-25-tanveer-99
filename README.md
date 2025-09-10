@@ -43,8 +43,26 @@ This project builds an anomaly based Intrusion Detection System (IDS) using the 
 - **F1:** 99.27%  
 - **Macro AUC:** 99.98% (val), 99.74% (test)
 
+![CNN_binary_confusion_matrix](plots/CNN_binary_confusion_matrix.png)
+
+---
+
 **CNN — Multi-class** (7 classes)  
 - Very high on major classes (e.g., Benign ≈ 99.82%, DoS-Hulk ≈ 99.99%, SlowHTTPTest ≈ 100%); confusion mainly between *Brute Force-Web* and *Brute Force-XSS*.
+
+| Class No. | Label                  | Accuracy (Recall %) |
+|-----------|------------------------|----------------------|
+| **0**     | Benign                 | 99.82%              |
+| **1**     | Bot                    | 98.94%              |
+| **2**     | Brute Force – Web      | 80.88%              |
+| **3**     | Brute Force – XSS      | 86.67%              |
+| **4**     | DoS – Hulk             | 99.99%              |
+| **5**     | DoS – SlowHTTPTest     | 100.00%             |
+| **6**     | SQL Injection          | 80.00%              |
+
+![CNN_multi_class_confusion_matrix](plots/CNN_multi_class_confusion_matrix.png)
+
+---
 
 **Autoencoder — Anomaly (binary)**
 - **Accuracy:** 95.7%  
@@ -52,12 +70,18 @@ This project builds an anomaly based Intrusion Detection System (IDS) using the 
 - **Recall:** 98.4%  
 - **F1:** 85.8%
 
+![AE_confusion_matrix](plots/AE_confusion_matrix.png)
+
+---
+
 **Hybrid — Anomaly (binary)**
 - **Accuracy:** 98.82% 
 - **Precision:** 98.82%  
 - **Recall:** 98.36%
 - **F1:** 99.27% 
 - **AUC:** ≈ 0.999
+
+![HYBRID_confusion_matrix](plots/HYBRID_confusion_matrix.png)
 
 ---
 
@@ -85,10 +109,16 @@ root
     ├── splits_bundle.joblib
     ├── standard_scaler_bundle.joblib
 ├── plots
+├── src
+    ├── CNN_model.ipynb
+    ├── Hybrid_model.ipynb
+    ├── data-preprocessing.ipynb
+    ├── exploring_CICIDS2018_dataset.ipynb
+    ├── feature_extraction_and_scaling.ipynb
 ├── .gitignore
-├── CNN_model.ipynb
-├── Hybrid_model.ipynb
-├── 
+├── README.md
+├── requirements.txt
+
 ```
 
 
