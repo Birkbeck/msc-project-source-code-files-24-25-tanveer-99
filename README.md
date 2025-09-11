@@ -1,7 +1,7 @@
 # Deep Learning for Anomaly Based Intrusion Detection: A Hybrid CNN-Autoencoder Approach
 ### 
 
-> This Project addresses the critical challenges of network intrusion detection by utilizing sophisticated deep learning architectures and a proposed hybrid model to analyse the complex and highly imbalaned CICIDS2018 dataset. Following an intensive feature extraction with Random Forest classifier, with feature scaling and upsampling with Synthetic Minority Oversampling Technique(SMOTE), the pipeline takes the processed dataset to Convolutional Neural Network and Autoencoder based model to find the optimal solution in detecting anomaly intrusion efficiently. The resulting system demonstrates exceptional performance and a robust and reliable intrusion detection solution.
+> This Project addresses the critical challenges of network intrusion detection by utilizing sophisticated deep learning architectures and a proposed hybrid model to analyse the complex and highly imbalaned CICIDS2018 dataset. Following an intensive feature extraction with Random Forest classifier, with feature scaling and upsampling with Synthetic Minority Oversampling Technique(SMOTE), the pipeline takes the processed dataset to Convolutional Neural Network and Autoencoder based model to find the optimal solution in detecting anomaly intrusion efficiently. The resulting system demonstrates exceptional performance and a robust and reliable intrusion detection solution. 
 
 ---
 
@@ -12,8 +12,6 @@
 - [Repository Structure](#repository-structure)
 - [Dataset](#dataset)
 - [Setup](#setup)
-- [Citation](#citation)
-- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -152,8 +150,8 @@ root
 
 ```bash
 # clone
-git clone <your-repo-url>.git
-cd <your-repo>
+git clone https://github.com/Birkbeck/msc-project-source-code-files-24-25-tanveer-99.git
+cd msc-project-source-code-files-24-25-tanveer-99
 
 # create environment (optional but recommended)
 python -m venv .venv 
@@ -176,4 +174,3 @@ To reconstruct the results, run the notebooks in this order.
 
 In the `artifacts` folder, the joblib files are created. Because these files are very large, they are uploaded to this [Google drive link](https://drive.google.com/drive/folders/1rXfWz_JDG5E5VEPpD8vQhi_WzCQgz2qY?usp=sharing) along with the actual dataset and the cleaned version also.
 
-ALL the `tables`, `figures` and `references and citations` can be viewed properly in the final [Report]().
