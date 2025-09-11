@@ -167,4 +167,9 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+To reconstruct the results, run the notebooks in this order.
+- 
+
 In the `artifacts` folder, the joblib files are created. Because these files are very large, they are uploaded to this [Google drive link](https://drive.google.com/drive/folders/1rXfWz_JDG5E5VEPpD8vQhi_WzCQgz2qY?usp=sharing) along with the actual dataset and the cleaned version also.
+
+ALL the `tables`, `figures` and `references and citations` can be viewed properly in the final [Report]().
