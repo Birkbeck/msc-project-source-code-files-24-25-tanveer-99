@@ -168,7 +168,11 @@ pip install -r requirements.txt
 ```
 
 To reconstruct the results, run the notebooks in this order.
-- 
+- Run the feature_extraction_and_scaling notebook first. This will process the cleaned dataset and find the best features and save them in the joblib files, which will be used for the other notebooks. Fix the directory path for the joblib files.
+- Run the CNN_model notebook next, it will save the model after training
+- Then run the Hybrid_model notebook next to train the AE model and hybrid model to produce evaluation reports
+
+---
 
 In the `artifacts` folder, the joblib files are created. Because these files are very large, they are uploaded to this [Google drive link](https://drive.google.com/drive/folders/1rXfWz_JDG5E5VEPpD8vQhi_WzCQgz2qY?usp=sharing) along with the actual dataset and the cleaned version also.
 
