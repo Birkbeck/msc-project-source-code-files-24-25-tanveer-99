@@ -106,6 +106,7 @@ root
     ├── extracted_features_bundle.joblib
     ├── splits_bundle.joblib
     ├── standard_scaler_bundle.joblib
+├── images
 ├── plots
 ├── src
     ├── CNN_model.ipynb
